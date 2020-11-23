@@ -13,11 +13,11 @@ const tambahan = require("./lib/tambahan.js")
 const donasi = require("./lib/donasi.js");
 const info = require("./lib/info.js");
 /////////////////
-const BotName = 'BоT GаиZ'; 
-const instagram = '@iam.cimots'; 
+const BotName = 'Pff Bot'; 
+const instagram = '@ini.pfff'; 
 const telegram = '-'; 
 const kapanbotaktif = 'KETIKA DIAKTIFKAN YA:)'; 
-const youtube = 'LIMITE CISHIE';
+const youtube = 'Gak Ada';
 //const grupch1 = 'belum ada grup'; 
 //const grupch2 = 'belum ada grup' ; 
 const
@@ -192,12 +192,35 @@ axios.get(`https://mhankbarbar.herokuapp.com/nulis?text=${teks}&apiKey=zFuV88pxc
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
+case '!waktu':
+
+            await tobz.sendText(from, `Waktu Indonesia Barat: *${moment().utcOffset('+0700').format('HH:mm')}* WIB \nWaktu Indonesia Tengah: *${moment().utcOffset('+0800').format('HH:mm')}* WITA \nWaktu Indonesia Timur: *${moment().utcOffset('+0900').format('HH:mm')}* WIT`)
+
+            break
 
 if (text.includes("!ytmp3")){
 const teks = text.replace(/!ytmp3 /, "")
 axios.get(`https://st4rz.herokuapp.com/api/yta?url=${teks}`).then((res) => {
     let hasil = `Audio telah tersedia pada link di bawah, silahkan klik link dan download hasilnya\n👇👇👇👇👇👇👇👇👇\n\nJudul: ${res.data.title}\n\nUkuran audio: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
+})
+}
+
+if (text.includes("!play")){
+Play music
+from gmusicapi import Mobileclient
+
+api = Mobileclient()
+# after running api.perform_oauth() once:
+api.oauth_login('<a previously-registered device id>')
+# => True
+
+library = api.get_all_songs()
+sweet_track_ids = [track['id'] for track in library
+                   if track['artist'] == 'The Cat Empire']
+
+playlist_id = api.create_playlist('Rad muzak')
+api.add_songs_to_playlist(playlist_id, sweet_track_ids)
 })
 }
 
