@@ -40,4 +40,4 @@
 <a href="https://instagram.com/ini.pfff" target="blank"><img align=
 
 <a href="https://wa.me/+6281260899819" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-
-  icons@3.0.1/icons/whatsapp.svg" alt="+6281260899819" height="30" width="40" /></a>
+  icons@3.0.1/icons/whatsapp.svg" alt="whatsapp" height="30" width="40" /></a>
