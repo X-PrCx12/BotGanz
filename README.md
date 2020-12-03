@@ -38,3 +38,5 @@
 <a href="https://fb.com/pfffbro" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="pfffbro" height="30" width="40" /></a>
 
 <a href="https://instagram.com/ini.pfff" target="blank"><img align=
+
+<a href="https://wa.me/+6281260899819" target="blank"><img align=
